@@ -1,0 +1,69 @@
+/* Define as propriedades básicas para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo do texto */
+    background-color: #818181; /* Define a cor de fundo */
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove o preenchimento */
+    display: flex; /* Define o tipo de layout como flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    height: 100vh; /* Define a altura para 100% da altura da viewport */
+}
+
+/* Estiliza o container principal */
+.container {
+    display: block; /* Define o display como bloco */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 300px; /* Define a largura */
+    margin: 50px auto; /* Define as margens superior e inferior e centraliza horizontalmente */
+    padding: 20px; /* Adiciona preenchimento interno */
+    background: #fff; /* Define a cor de fundo */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+/* Estiliza o título */
+h2 {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 30px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/* Estiliza os campos de entrada e o botão de envio */
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 22px); /* Define a largura */
+    padding: 10px; /* Adiciona preenchimento */
+    margin-bottom: 15px; /* Adiciona margem inferior */
+    border: 1px solid #ccc; /* Define uma borda */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    box-sizing: border-box; /* Garante que a largura total inclua o preenchimento e a borda */
+}
+
+/* Estiliza o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estiliza o botão de envio ao passar o mouse sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Altera a cor de fundo */
+}
+
+/* Estiliza os parágrafos */
+p{
+    text-align: center; /* Alinha o texto ao centro */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/* Define estilos para telas menores que 600px */
+@media  only screen and (max-width: 600px) {
+    body{
+        height: 90vh; /* Redefine a altura do corpo para 90% da altura da viewport */
+    }
+}
